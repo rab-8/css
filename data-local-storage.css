@@ -260,9 +260,15 @@ body {
 
 .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table th {
   width: 160px;
+  min-width: 160px;
   padding: 10px;
   font-style: italic;
   border: 2px solid black;
+}
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table th:nth-child(10n+1) {
+  width: 100px;
+  min-width: 100px;
 }
 
 .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td {
