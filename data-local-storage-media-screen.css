@@ -1,0 +1,121 @@
+@media screen and (max-width: 768px) {
+  .data-local-storage .data-local-storage-box h1 {
+    color: red;
+    font-size: 25px;
+  }
+  
+  .data-local-storage .data-local-storage-box h4 {
+    color: blue;
+    font-size: 15px;
+  }
+  
+  .data-local-storage .form-row {
+  background-color: red;
+  margin: 0px;
+  }
+  
+  .data-local-storage .form-row .col-md-3 {
+    width: 100%;
+  }
+  
+  .data-local-storage .form-row .col-md-3 label {
+    font-size: 15px;
+  }
+  
+  .data-local-storage .form-row .col-md-3 input::placeholder {
+    font-size: 15px;
+  }
+  
+  .data-local-storage .form-row .col-md-6.col-sm-7 label {
+    font-size: 15px;
+  }
+  
+  .data-local-storage .form-row .col-md-6.col-sm-7 textarea {
+    font-size: 15px;
+  }
+  
+  
+  
+  
+  
+  .data-local-storage .row.pt-2 {
+  background-color: blue;
+  }
+  
+  .data-local-storage .row.pt-2 .col-md-2 button {
+  color: yellow;
+  width: 80px;
+  padding: 5px;
+  font-size: 20px;
+  font-family: times;
+  font-weight: bold;
+  }
+  
+  .data-local-storage .row.pt-3 h1 {
+    font-size: 25px;
+  }
+  
+  .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 .form-input input::placeholder {
+    color: yellow;
+    font-size: 15px;
+  }
+  
+  .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 {
+    border: 5px solid red;
+  }
+  
+  .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table th {
+    width: 160px;
+    min-width: 160px;
+  }
+  
+  .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table th:nth-child(10n+1) {
+    width: 80px;
+    min-width: 80px;
+  }
+  
+  .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(10n+9) {
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    width: 160px;
+    min-width: 160px;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    
+  }
+  
+  .memorandum#memorandum {
+    animation-name: infiniteScroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes infiniteScroll {
+    from {transform: translateX(0)}
+    to {transform: translateX(-100%)}
+  }
+  
+  .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(10n+9):hover {
+    animation-play-state: paused;
+  }
+  
+  .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table th:nth-child(10n+10) {
+    width: 90px;
+    min-width: 90px;
+  }
+  
+  .data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td {
+    color: blue;
+    padding: 5px;
+  }
+  
+  button.btn.btn-sm.btn-success.btn-edit,
+  button.btn.btn-sm.btn-danger.btn-delete {
+    color: white;
+    width: 35px;
+    height: 35px;
+  }
+}
+
