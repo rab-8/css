@@ -293,7 +293,7 @@ body {
   width: 160px;
   min-width: 160px;
   padding: 10px;
-  line-height: 50px;
+  line-height: 100px;
   overflow: hidden;
   display: flex;
   white-space: nowrap;
