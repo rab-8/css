@@ -148,6 +148,17 @@ body {
   color: red;
 }
 
+:required {
+  background-color: red;
+}
+
+:optional {
+  background-color: red;
+}
+
+
+
+
 
 
 
