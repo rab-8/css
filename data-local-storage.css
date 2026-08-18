@@ -266,7 +266,7 @@ body {
   border: 2px solid black;
 }
 
-.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table th:nth-child(10n+1) {
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table th:nth-child(11n+1) {
   width: 100px;
   min-width: 100px;
 }
@@ -277,24 +277,26 @@ body {
   border: 2px solid black;
 }
 
-.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(10n+1) {
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(11n+1) {
   text-align: center;
   font-weight: bold;
 }
 
-.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(10n+3) {
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(11n+3) {
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(11n+9) {
   color: red;
 }
 
-.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(10n+8) {
-  color: red;
-}
-
-.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(10n+10) {
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(11n+11) {
   background-color: yellow;
 }
 
-.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(10n+9) {
+.data-local-storage .row.pt-3 .col-md-12.col-sm-12.col-12.p-2 table td:nth-child(11n+10) {
   background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
   width: 160px;
   min-width: 160px;
