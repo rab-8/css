@@ -308,9 +308,39 @@ table tbody tr td {
   color: yellow;
 }
 
-table tbody tr td:nth-child(1) {
+table tbody tr td:nth-child(13n+1) {
   background-color: red;
   color: yellow;
+}
+
+table tbody tr td:nth-child(13n+4) {
+  color: red;
+  font-family: times;
+  font-size: 20px;
+  letter-spacing: 1;
+}
+
+table tbody tr td:nth-child(13n+11) {
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+  color: black;
+  width: 160px;
+  min-width: 160px;
+  height: 100%;
+  padding: 10px;
+  line-height: 100px;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+table tbody tr td:nth-child(13n+11):hover div {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { left: 0%; }
+  100% { left: -1100px; }
 }
 
 
