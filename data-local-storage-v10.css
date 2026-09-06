@@ -343,7 +343,10 @@ table tbody tr td:nth-child(13n+11):hover div {
   100% { left: -1100px; }
 }
 
-
+input::placeholder {
+  color: orangered;
+  opacity: 0.4;
+}
   
 
 
