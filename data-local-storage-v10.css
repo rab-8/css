@@ -314,6 +314,7 @@ input::placeholder {
 }
 
 input#date {
+  background: linear-gradient(110deg, rgba(0,0,0,0.8) 85%, #ffed4b 60%);
   color: yellow;
 }
 
