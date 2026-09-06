@@ -284,6 +284,17 @@ utton#save.primary {
 
 /*=============================================== টেবিল ===============================================*/
 
+.tablewrap {
+  height: 300px;
+  overflow-y: scroll;
+  border: 9px;
+  border-style: groove;
+  border-top-color: blue;
+  border-right-color: yellow;
+  border-bottom-color: red;
+  border-left-color: yellow;
+}
+
 table tr th {
   border: 1px solid red;
 }
