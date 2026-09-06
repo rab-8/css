@@ -1,0 +1,426 @@
+:root{--p:#0f766e;--p2:#115e59;--bg:#f1f5f9;--card:#fff;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;--danger:#dc2626;--warn:#d97706;--blue:#2563eb;--side:#0b3d35}
+* {
+  box-sizing:border-box;
+}
+
+html,body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Noto Sans Bengali","SolaimanLipi",Arial,sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+button,input {
+  font:inherit;
+}
+
+button {
+  cursor:pointer;
+  border:0;
+}
+
+.app{display:flex;min-height:100vh}.sidebar{width:250px;background:linear-gradient(180deg,#0b3d35,#08352f);color:#fff;position:fixed;inset:0 auto 0 0;padding:18px 13px;z-index:10}.brand{padding:10px 12px 22px;border-bottom:1px solid #ffffff1f}
+
+.brand h2{margin:0;font-size:20px}.brand small{opacity:.75}.nav{padding-top:16px}.nav button{display:block;width:100%;text-align:left;background:transparent;color:#d8eeea;padding:12px 13px;border-radius:10px;margin:4px 0;font-weight:700}.nav button:hover,.nav button.active{background:#ffffff18;color:#fff}.sidebottom{position:absolute;bottom:18px;left:13px;right:13px}.sidebottom button{width:100%;background:#ffffff12;color:#fff;padding:10px;border-radius:10px}
+.main{margin-left:250px;width:calc(100% - 250px);padding:18px}.topbar{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:16px}.topbar h1{font-size:20px;margin:0}.topbar span{font-size:13px;color:var(--muted)}
+.section{display:none}.section.active{display:block}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px;box-shadow:0 4px 15px #0f172a0a}.stat b{display:block;font-size:26px;color:var(--p)}.stat span{color:var(--muted);font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:16px;box-shadow:0 5px 20px #0f172a0a}.title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:15px}
+
+.title h2{font-size:19px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field label{font-weight:700;font-size:13px}.field input{border:1px solid #cbd5e1;border-radius:10px;padding:11px 12px;outline:0;background:#fff}.field input:focus{border-color:var(--p);box-shadow:0 0 0 3px #0f766e18}
+.photo{grid-row:span 2;display:flex;flex-direction:column;align-items:center;justify-content:center;border:2px dashed #cbd5e1;border-radius:14px;padding:12px;min-height:220px}.photo img,.photo .ph{width:125px;height:150px;border-radius:10px;object-fit:cover;border:1px solid var(--line)}.ph{display:flex;align-items:center;justify-content:center;text-align:center;background:#f8fafc;color:var(--muted);font-size:13px}.photo input{margin-top:10px;width:100%;max-width:230px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}button{border-radius:10px;padding:10px 15px;font-weight:700}.primary{background:var(--p);color:#fff}.secondary{background:#e2e8f0;color:#0f172a}.blue{background:var(--blue);color:#fff}.warn{background:var(--warn);color:#fff}.danger{background:var(--danger);color:#fff}
+.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:13px}.search{flex:1;min-width:240px;border:1px solid #cbd5e1;border-radius:10px;padding:11px 13px;outline:0}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:1250px}th,td{border-bottom:1px solid var(--line);padding:9px;text-align:center;white-space:nowrap}th{background:#f8fafc;font-size:13px;position:sticky;top:0;z-index:1}.thumb{width:48px;height:58px;object-fit:cover;border-radius:7px;border:1px solid var(--line)}.mini{padding:7px 9px;font-size:12px}.empty{text-align:center;padding:35px;color:var(--muted)}
+.modal{position:fixed;inset:0;background:#0f172a88;display:none;align-items:center;justify-content:center;padding:15px;z-index:30}.modal.show{display:flex}.modalbox{background:#fff;border-radius:18px;max-width:720px;width:100%;max-height:90vh;overflow:auto;padding:20px}.profile{display:grid;grid-template-columns:135px 1fr;gap:18px}.profile img,.profile .ph{width:125px;height:155px;object-fit:cover;border-radius:12px}.details{display:grid;grid-template-columns:1fr 1fr;gap:9px}.details div{background:#f8fafc;padding:9px;border-radius:9px}.details small{display:block;color:var(--muted)}
+
+.login {
+  background: linear-gradient(135deg,#063c34,#0f766e);
+  background-image: url('https://rab-8.github.io/images/SRB-8.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 18px;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2);
+  border: 2px solid red;
+  z-index: 100;
+}
+
+.login .blur {
+  background-color: rgba(0,0,0,.8);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  backdrop-filter: blur(10px);
+}
+
+.loginbox {
+  background-color: rgba(0,0,0,.8);
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow:0 20px 60px #0005;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 2px solid yellow;
+}
+
+.login .loginbox .img {
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 2px solid yellow;
+  border-radius: 50px;
+}
+
+.login .loginbox .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.loginbox h2 {
+  color: yellow;
+  margin: 0 0 7px;
+  font-weight: 500;
+}
+
+.loginbox p {
+  color: red;
+  font-size: 13px;
+}
+
+.loginbox input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  margin: 12px 0;
+  outline: 0;
+}
+
+.loginbox button {
+  width: 100%;
+}
+
+.toast {
+  position:fixed;
+  right: 18px;
+  bottom: 18px;
+  background: #0f172a;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: none;
+  z-index: 200;
+}
+
+aside.sidebar {
+  border-width: 2px;
+  border-style: solid;
+  border-left-color: red;
+  border-top-color: red;
+  border-right-color: red;
+  border-bottom-color: red;
+}
+
+
+
+
+
+
+
+/*=============================================== মেইন ===============================================*/
+
+main.main {
+  background-color: rgba(0,0,0,.8);
+  backdrop-filter: blur(2);
+
+  border-width: 2px;
+  border-style: solid;
+  border-left-color: none;
+  border-top-color: red;
+  border-right-color: red;
+  border-bottom-color: red;
+}
+
+
+
+.brand img {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+
+/*=============================================== সাইডবার মেনু ===============================================*/
+.sidebottom button {
+  background-color: red;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+
+
+
+
+
+
+/*=============================================== টপবার মেনু ===============================================*/
+
+main.main .topbar {
+  background-color: rgba(0,0,0,.8);
+  backdrop-filter: blur(2);
+}
+
+main.main .topbar h1#pageTitle {
+  color: yellow;
+}
+
+main.main .topbar span {
+  color: white;
+}
+
+main.main .topbar #clock {
+  background-color: red;
+  color: yellow;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+main.main .card {
+  background-color: rgba(0,0,0,.8);
+  backdrop-filter: blur(2);
+}
+
+main.main .card .title h2 {
+  color: yellow;
+}
+
+main.main .card .title h2#formTitle {
+  color: yellow;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+main.main .card #recent {
+  color: cyan;
+  font-weight: 400;
+}
+
+
+
+
+
+
+/*=============================================== নতুন ফরম ===============================================*/
+
+.field input {
+  background-color: rgba(0,0,0,.8);
+  color: white;
+  opacity: 0.5;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.1;
+}
+
+.field input:focus {
+  color: yellow;
+  border: 2px solid yellow;
+}
+
+.field label {
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.field label::after {
+  content: '*';
+  color: red;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+input#date {
+  color: yellow;
+}
+
+button {
+
+}
+
+.primary {
+  background-color: green;
+  color: #fff;
+}
+
+.secondary {
+  background-color: red;
+  color: white;
+}
+
+utton#save.primary {
+  background-color: blue;
+  color: white;
+}
+
+
+
+/*=============================================== টেবিল ===============================================*/
+
+table tr th {
+  border: 1px solid red;
+}
+
+table tr td {
+  border: 1px solid white;
+}
+
+table thead tr th {
+  background-color: teal;
+  color: white;
+  top: 0;
+  position: sticky;
+}
+
+table tbody {
+  height: 260px;
+  overflow: scroll;
+}
+
+table tbody tr td {
+  color: yellow;
+}
+
+table tbody tr td:nth-child(1) {
+  background-color: red;
+  color: yellow;
+}
+
+
+  
+
+
+
+
+/*=============================================== mobile Screen ===============================================*/
+
+@media(max-width:1000px) {
+  .sidebar{width:210px}
+  .main{margin-left:210px;width:calc(100% - 210px)}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}}
+
+@media(max-width:700px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .app {
+    display: block;
+  }
+
+  .main {
+    margin: 0;
+    width: 100%;
+    padding: 9px;
+  }
+
+  .nav {
+    display: flex;
+    overflow: auto;
+    gap: 5px;
+  }
+  
+  .nav button {
+    white-space: nowrap;
+    width: auto;
+  }
+    
+  .sidebottom {
+    position: static;
+    margin-top: 8px;
+  }
+    
+  .grid {
+    grid-template-columns: 1fr;
+  }
+    
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+    
+  .stats {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .card{
+    padding: 13px;
+  }
+  
+  .profile {
+    grid-template-columns: 1fr;
+    text-align: center}
+
+  .details {
+    grid-template-columns: 1fr};
+  }
+
+@media print {
+  .sidebar,.topbar,.no-print {
+    display: none!important;
+  }
+
+  .main {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .section {
+    display: none;
+  }
+
+  .section.active {
+    display: block;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 0;
+    padding: 0;
+  }
+
+  .tablewrap {
+    overflow: visible;
+  }
+
+  table {
+    min-width: 100%;
+    font-size: 8px;
+  }
+
+  th {
+    background: #ddd!important;
+    color: #000;
+  }
+}
