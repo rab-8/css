@@ -173,6 +173,14 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
 }
 
 
+
+
+
+
+
+
+
+
 /*======================================================= CONTAINER =======================================================*/
 
 .container {
@@ -184,6 +192,15 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
   flex: 1;
 }
 
+
+
+
+
+
+
+
+/*======================================================= TOPBAR =======================================================*/
+
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -191,8 +208,20 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
   margin-bottom: 20px;
 }
 
+.topbar {
+  background-color: rgba(0,0,0,0.4);
+  margin-bottom: 14px;
+  padding: 16px;
+  border: 1px solid #aaa;
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+}
+
 .topbar h1 {
+  color: yellow;
   margin: 0 0 6px;
+  font-family: 'khalid-bin-olid';
+  font-weight: normal;
 }
 
 .topbar p {
@@ -221,7 +250,6 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
 
 /*======================================================= TOPBAR =======================================================*/
 
-.topbar,
 .card {
   background-color: rgba(0,0,0,0.4);
   margin-bottom: 14px;
@@ -229,10 +257,6 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
   border: 1px solid #aaa;
   border-radius: 16px;
   backdrop-filter: blur(5px);
-}
-
-.topbar h1 {
-  color:#e5e500;
 }
 
 .card.auth-card .img {
