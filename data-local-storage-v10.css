@@ -657,6 +657,12 @@ body.sidebar-collapsed .sidebar-toggle{left:12px}
 
 
 
+h1 {
+  color: yellow;
+  margin: 0 0 6px;
+  font-family: 'khalid-bin-olid';
+  font-weight: normal;
+}
 
 h2 {
   color: yellow;
