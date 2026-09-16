@@ -170,7 +170,7 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
 
 .live-clock {
   background-color: rgba(0, 0, 0, 0.2);
-  color: red;
+  color: yellow;
   padding: 12px 16px;
   border-radius: 10px;
   font-weight: 700;
@@ -191,7 +191,7 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
 
 .topbar,
 .card {
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0,0,0,0.4);
   margin-bottom: 14px;
   padding: 16px;
   border: 1px solid #aaa;
@@ -231,13 +231,20 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
 
 .stat-card {
   background-color: rgba(0, 0, 0, 0.4);
-  color:#176f6b;
-  border-radius:15px;
-  padding:18px;
+  color: white;
+  border-radius: 15px;
+  padding: 18px;
   border: 1px solid #aaa;
 }
 
-.stat-card strong{display:block;font-size:28px}.stat-card small{display:block;margin-top:6px;color:#777;font-size:12px}
+.stat-card strong{display:block;font-size:28px}
+
+.stat-card small {
+  display:block;
+  margin-top:6px;
+  color:orangered;
+  font-size:12px;
+}
 
 .toolbar,.backup-actions{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
 
