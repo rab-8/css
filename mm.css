@@ -228,7 +228,14 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
 }
 
 .dashboard{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.stat-card{background:#fff;color:#176f6b;border-radius:15px;padding:18px}
+
+.stat-card {
+  background-color: rgba(0, 0, 0, 0.4);
+  color:#176f6b;
+  border-radius:15px;
+  padding:18px;
+  border: 1px solid #aaa;
+}
 
 .stat-card strong{display:block;font-size:28px}.stat-card small{display:block;margin-top:6px;color:#777;font-size:12px}
 
@@ -244,7 +251,13 @@ button{cursor:pointer}
 
 .danger{background:#f01818;color:#fff;border:0;padding:10px 15px;border-radius:8px}
 
-input{background:#111;color:#fff;border:1px solid #777;border-radius:8px;padding:10px}
+input {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: 1px solid #777;
+  border-radius: 8px;
+  padding: 10px;
+}
 
 .table-wrap{overflow:auto}
 
@@ -280,7 +293,15 @@ input[type="date"]::-moz-calendar-picker-indicator {
 
 
 /* সকল তথ্য মেনু - রেফারেন্স ডিজাইন */
-.table-card{background:#080808;border:1px solid #aaa;border-radius:16px;padding:16px;margin-top:0}
+
+.table-card {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #aaa;
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 0;
+}
+
 .records-toolbar{display:flex;gap:10px;align-items:center;margin:12px 0 10px}
 .records-toolbar input{background:#fff;color:#555;border:0;border-radius:10px;padding:11px 14px;flex:1;min-width:0;font-size:14px}
 .records-print{background:#1769e8!important;padding:10px 16px;border-radius:9px;white-space:nowrap}
