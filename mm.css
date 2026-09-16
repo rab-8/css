@@ -245,6 +245,7 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
   border-radius: 15px;
   padding: 18px;
   border: 1px solid #aaa;
+  backdrop-filter: blur(5px);
 }
 
 .stat-card strong{display:block;font-size:28px}
