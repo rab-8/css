@@ -55,7 +55,12 @@ td img{width:48px;height:48px;object-fit:cover;border-radius:6px}
 }
 
 .stat-card span{display:block;font-size:15px;opacity:.9}
-.stat-card strong{display:block;font-size:34px;margin-top:10px}.recent-card{grid-column:1/-1;margin:0}.recent-card h2{margin-top:0}.recent-card ol{margin:0;padding-right:22px}.recent-card li{padding:8px 0;border-bottom:1px solid #e5e7eb}@media(max-width:800px){.dashboard{grid-template-columns:1fr}.recent-card{grid-column:auto}}
+.stat-card strong{display:block;font-size:34px;margin-top:10px}
+.recent-card{grid-column:1/-1;margin:0}
+.recent-card h2{margin-top:0}.recent-card ol{margin:0;padding-right:22px}
+.recent-card li{padding:8px 0;border-bottom:1px solid #e5e7eb}
+
+@media(max-width:800px){.dashboard{grid-template-columns:1fr}.recent-card{grid-column:auto}}
 body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{display:flex;min-height:100vh}
 
 
@@ -556,7 +561,15 @@ body.sidebar-collapsed .sidebar-toggle{left:12px}
  .records-print{width:100%}
  .profile-modal-body{grid-template-columns:1fr}
  .profile-photo-box{margin:auto}
- .card,.recent-dashboard-card,.table-card,.backup-card,.settings-card,.formCard{padding:12px}
+
+ .card,
+ .recent-dashboard-card,
+ .table-card,
+ .backup-card,
+ .settings-card,
+ .formCard {
+  padding: 12px;
+}
 }
 
 
@@ -603,4 +616,15 @@ body.sidebar-collapsed .sidebar-toggle{left:12px}
   color: yellow;
   display: block;
   text-align: center;
+}
+
+
+
+
+h2 {
+  color: yellow;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
 }
