@@ -37,7 +37,13 @@ button{border:0;border-radius:8px;padding:11px 16px;cursor:pointer;font-weight:6
 
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 
-label{display:flex;flex-direction:column;gap:6px;font-weight:600}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: solaiman-lipi;
+  font-weight: 100;
+}
 
 input{padding:11px;border:1px solid #d1d5db;border-radius:8px;font-size:15px}
 
@@ -328,28 +334,46 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
 }
 
 .stat-card small {
-  display:block;
-  margin-top:6px;
-  color:orangered;
-  font-size:12px;
+  display: block;
+  margin-top: 6px;
+  color: orangered;
+  font-size: 15px;
+  font-family: solaiman-lipi;
 }
 
 .toolbar,.backup-actions{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
 
 button{cursor:pointer}
 
-.backup-actions button{padding:12px 16px;border:0;border-radius:9px;color:#fff;font-weight:bold}
+.backup-actions button {
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 20px;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+}
 
 .hidden{display:none!important}.primary{background:#08a000;color:#fff;border:0;padding:10px 15px;border-radius:8px}
 
-.secondary{background:#e78b00;color:#fff;border:0;padding:10px 15px;border-radius:8px}
+.secondary {
+  background-color: orange;
+  color: #fff;
+  font-size: 20px;
+  font-family: solaiman-lipi;
+  font-weight: 500;
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
 
 .danger {
  background-color: red;
   color: #fff;
   border: 0;
   padding: 10px;
-  font-size: 15px;
+  font-size: 20px;
   font-family: solaiman-lipi;
   font-weight: 100;
   border-radius: 8px;
@@ -439,10 +463,12 @@ input[type="date"]::-moz-calendar-picker-indicator {
   background-color: teal;
   color: white;
   padding: 9px;
-  font-size: 12px;
+  font-size: 15px;
+  font-family: solaiman-lipi;
+  font-weight: 300;
   position: sticky;
   top: 0;
-  border-width: 1px solid red;
+  border: 1px solid red;
 }
 
 .table-card table tbody {
@@ -453,8 +479,10 @@ input[type="date"]::-moz-calendar-picker-indicator {
 .table-card td {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
-  border: 1px solid #d22;
   padding: 9px;
+  font-family: solaiman-lipi;
+  font-weight: 100;
+  border: 1px solid #d22;
 }
 
 .table-card td img {
@@ -509,10 +537,31 @@ input[type="date"]::-moz-calendar-picker-indicator {
 
 .recent-number{width:25px;height:25px;display:grid;place-items:center;border-radius:50%;background:#008f8b;color:#fff;font-weight:bold;font-size:12px}
 .recent-entry-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
-.recent-entry-main strong{color:#fff;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.recent-entry-main small{color:#9fa8b7;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.recent-entry-main strong {
+  color: white;
+  font-size: 15px;
+  font-family: solaiman-lipi;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recent-entry-main small {
+  color: #8d99ad;
+  font-size: 11px;
+  font-family: solaiman-lipi;
+  font-weight: 300;
+  opacity: .3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .recent-entry-date{color:#e7e51a;font-size:11px;white-space:nowrap}
 .empty-recent{color:#6f7888;text-align:center;margin:22px 0;font-size:13px}
+
 @media(max-width:700px){.recent-dashboard-heading h2{font-size:16px}.recent-entry-row{padding:8px}.recent-entry-main strong{font-size:13px}.recent-entry-date{font-size:10px}}
 
 
