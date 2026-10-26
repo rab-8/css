@@ -204,7 +204,19 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
 
 /*======================================================= TOPBAR =======================================================*/
 
-.topbar,
+.topbar {
+  background-color: rgba(0,0,0,0.4);
+  margin-bottom: 14px;
+  padding: 16px;
+  border: 1px solid #aaa;
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+}
+
+.topbar h1 {
+  color:#e5e500;
+}
+
 .card {
   background-color: rgba(0,0,0,0.4);
   margin-bottom: 14px;
@@ -214,10 +226,6 @@ body{margin:0;background:#303133;color:#eee;font-family:Arial,sans-serif}.shell{
   backdrop-filter: blur(5px);
   text-align: center;
   line-height: 70px;
-}
-
-.topbar h1 {
-  color:#e5e500;
 }
 
 .card.auth-card .img {
