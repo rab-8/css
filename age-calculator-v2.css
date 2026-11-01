@@ -1,0 +1,192 @@
+:root {
+  --green: #078b45;
+  --deep-green: #056b37;
+  --blue: #075de0;
+  --red: #ef3535;
+  --orange: #ffad12;
+  --ink: #17334a;
+}
+* { box-sizing: border-box; }
+
+body {
+background-image: url(https://rab-8.github.io/images/SRB-1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+background-attachment: fixed;
+min-height: 100vh;
+display: flex;
+align-items: stretch;
+margin: 0;
+min-height: 100vh;
+padding: 34px 18px;
+display: grid;
+place-items: center;
+color: var(--ink);
+font-family: solaiman-lipi, "Noto Sans Bengali", sans-serif;
+ackground:
+  radial-gradient(circle at 8% 12%, rgba(55,224,239,.48), transparent 28%),
+  radial-gradient(circle at 92% 8%, rgba(115,255,185,.45), transparent 30%),
+  linear-gradient(135deg, #c8fbff 0%, #e8fff1 55%, #d3f9e5 100%);
+}
+
+.calculator {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: min(100%, 900px);
+  height: 520px;
+  padding: 16px;
+  border-radius: 30px;
+  border: 1px solid white;
+  backdrop-filter: blur(3px);
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+.calculator-box { width: 100%; }
+
+.enter {
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #08b84c, #078b35 70%, #06782f);
+  border-bottom: 5px solid #ef3535;
+  box-shadow: 0 8px 18px rgba(0,110,55,.18);
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: clamp(22px, 3.4vw, 34px);
+  line-height: 1.45;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+.fields {
+  margin: 20px 0px;
+  padding: 24px 18px 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+.block { min-width: 0; text-align: center; }
+
+.block:nth-child(1) {
+  background-color: red;
+  padding: 10px;
+  box-shadow: 2px 2px 5px blue, -2px -2px 5px Green;
+}
+
+.block:nth-child(2) {
+  background-color: green;
+  padding: 10px;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px blue;
+}
+
+.block:nth-child(3) {
+  background-color: blue;
+  padding: 10px;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px yellow;
+}
+
+.title {
+  color: #ffe900;
+  margin: 0 0 10px;
+  padding: 8px 6px;
+  border-radius: 10px;
+  font-size: clamp(22px, 3vw, 32px);
+  line-height: 1.4;
+  font-weight: 700;
+  border: 2px solid #075de0;
+}
+
+.block:nth-child(1) .title { background-color: red; }
+.block:nth-child(2) .title { background-color: green; }
+.block:nth-child(3) .title { background-color: blue; }
+
+input[type="text"] {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 2px solid #075de0;
+  border-radius: 14px;
+  color: #e93636;
+  font: inherit;
+  font-size: clamp(20px, 2.7vw, 30px);
+  font-weight: 700;
+  outline: none;
+  box-shadow: 0 5px 12px rgba(0,64,180,.12);
+  transition: border-color .2s, box-shadow .2s, background .2s;
+}
+
+input[type="text"]:focus {
+  border-color: #078b45;
+  background: #f4fff7;
+  color: #075de0;
+  box-shadow: 0 0 0 4px rgba(7,139,69,.12);
+}
+
+input::placeholder { color: #e93636; opacity: .65; }
+
+.submit-wrap { padding: 0 18px 20px; }
+
+input[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  border-radius: 17px;
+  color: #b71c13;
+  background: linear-gradient(180deg, #ffdf26, #ff9f0a);
+  box-shadow: 0 6px 0 #c82a18, 0 12px 20px rgba(110,50,0,.18);
+  font: inherit;
+  font-size: clamp(22px, 3.3vw, 34px);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s, filter .15s;
+}
+
+input[type="button"]:hover { filter: brightness(1.04); }
+
+input[type="button"]:active { transform: translateY(3px); box-shadow: 0 3px 0 #c82a18; }
+
+#age {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: yellow;
+  display: none;
+  margin: 4px 18px 12px;
+  padding: 18px 14px;
+  border: 2px solid yellow;
+  border-radius: 16px;
+  text-align: center;
+  font-size: clamp(20px, 2.8vw, 28px);
+  font-weight: 700;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+#age.show { display: block; }
+
+.result-icon { color: #078b35; margin: 0 10px; }
+
+@media (max-width: 560px) {
+  body { padding: 16px 10px; }
+  .calculator { padding: 10px; border-radius: 20px; }
+  .enter { padding: 15px 12px; border-radius: 15px; }
+  .fields { gap: 9px; padding: 18px 4px 16px; }
+  .title { padding: 8px 3px; font-size: 21px; border-radius: 10px; }
+  input[type="text"] { padding: 12px 7px; font-size: 20px; border-radius: 11px; text-align: center; }
+  .submit-wrap { padding: 0 4px 18px; }
+  #age { margin: 4px 4px 8px; }
+}
+
+@media (max-width: 360px) {
+  .fields { gap: 6px; }
+  .title { font-size: 18px; }
+  input[type="text"] { font-size: 18px; }
+}
