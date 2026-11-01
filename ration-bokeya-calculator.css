@@ -171,9 +171,10 @@ td input {
 }
 
 .hint {
-  font-size: 14px;
   color: yellow;
   margin: 10px 2px 0;
+  font-size: 14px;
+  font-family: 'solaiman-lipi';
 }
 
 @media (max-width: 650px) {
